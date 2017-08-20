@@ -1,0 +1,305 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Consolas, sans-serif;
+}
+
+#phoneBookHeader {
+    text-align: center;
+    background: #2f6fad;
+    font-size: 30px;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #c5c5de;
+    font-weight: 900;
+    font-family: Consolas, sans-serif;
+}
+
+#menu {
+    background: #2f6fad;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 20%;
+    min-width: 200px;
+    text-align: center;
+    margin: auto;
+    overflow: auto;
+    box-shadow: 0px 0px 20px 5px #21507C;
+    position: relative;
+    top: 140px;
+    left: 0;
+    right: 0;
+}
+#viewHome {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+#viewHome h1 {
+    font-size: 40px;
+    color: #21507C;
+}
+
+#loginLink, #registerLink {
+    box-shadow: 0px 0px 20px 5px #7E7E91;
+    border: none;
+    background: #acacc4;
+    font-size: 15px;
+    color: #21507C;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100px;
+    margin: 5px;
+}
+
+#loginLink:hover, #registerLink:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    color: black;
+    box-shadow: 0px 0px 20px 5px #727272;
+}
+
+#loadingBox, #infoBox, #errorBox {
+    width: 60%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 14px;
+    font-size: 20px;
+    display: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    font-family: Consolas, sans-serif;
+    overflow: auto;
+}
+
+#loadingBox {
+    background: #2f6fad;
+    box-shadow: 0px 0px 20px 5px #21507C;
+    position: absolute;
+}
+
+#infoBox {
+    background: green;
+    box-shadow: 0px 0px 20px 5px #006300;
+    position: absolute;
+}
+
+#errorBox {
+    background: red;
+    box-shadow: 0px 0px 20px 5px #DD0000;
+    position: absolute;
+}
+
+
+#viewLogin, #viewRegister {
+    display: none;
+}
+
+#viewLogin h1, #viewRegister h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #acacc4;
+    font-weight: 900;
+    font-family: Consolas, sans-serif;
+}
+
+#userMenu {
+    float: left;
+    background: #2f6fad;
+    border-radius: 20px;
+    padding: 20px 20px;
+    width: 170px;
+    text-align: center;
+    margin: 30px 30px;
+    box-shadow: 0px 0px 20px 5px #21507C;
+}
+
+#userMenu button {
+    box-shadow: 0px 0px 20px 5px #7E7E91;
+    border: none;
+    background: #acacc4;
+    font-size: 15px;
+    color: #21507C;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+    width: 90%;
+    margin: 10px;
+}
+
+
+#phonebookLink:hover, #addUserLink:hover, #logoutLink:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    color: black;
+    box-shadow: 0px 0px 20px 5px #727272;
+}
+
+#viewPhonebook {
+    position: relative;
+    top: 30px;
+    left:0;
+    right: 0;
+    background: #2f6fad;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    max-width: 60%;
+    min-width: 80px;
+    text-align: center;
+    overflow: auto;
+    box-shadow: 0px 0px 20px 5px #21507C;
+}
+
+
+#phonebook {
+    margin: 5px auto;
+}
+
+#phonebook table {
+    margin: 0px auto;
+}
+
+#phonebook table td, th {
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 5px #7E7E91;
+    border: none;
+    font-size: 15px;
+    color: #21507C;
+    font-weight: bold;
+}
+
+#viewCreatePhonebook, #viewEditPhonebook  {
+    position: relative;
+    left: 0;
+    right: 0;
+    background: #2f6fad;
+    border-radius: 20px;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    margin: 30px 30px;
+    margin-left: 60px;
+    overflow: auto;
+    box-shadow: 0px 0px 20px 5px #21507C;
+}
+#viewCreatePhonebook h1, #viewEditPhonebook h1, #viewPhonebook h1 {
+    margin: 0px auto;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #acacc4;
+    font-weight: 900;
+    font-family: Consolas, sans-serif;
+}
+
+table th {
+    padding: 3px 5px;
+    width: 140px;
+    height: 40px;
+    background: #acacc4;
+    font-size: 1.0em;
+}
+
+table td {
+    padding: 3px 5px;
+    width: 140px;
+    height: 40px;
+    background: #DDD;
+    font-size: 1.0em;
+}
+
+#deleteButton, #editButton {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 4px;
+    padding: 5px;
+    background: rgba(0, 0, 255, 0.4);
+    color: black;
+    width: 60px;
+    outline: none;
+}
+
+#deleteButton:hover, #editButton:hover {
+    cursor: pointer;
+    background: #0000be;
+    color: #DDDDDD;
+}
+
+#deleteButton:active, #editButton:active {
+    position: relative;
+    bottom: 3px;
+}
+
+input[type=button], input[type=submit] {
+    outline: none;
+    box-shadow: 0px 0px 20px 5px #7E7E91;
+    border: none;
+    background: #acacc4;
+    font-size: 15px;
+    color: #21507C;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+}
+
+input[type=button]:hover, input[type=submit]:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    color: black;
+    box-shadow: 0px 0px 20px 5px #727272;
+}
+
+input[type=button]:active, input[type=submit]:active, #loginLink:active, #registerLink:active, #phonebookLink:active, #addUserLink:active, #logoutLink:active{
+    position: relative;
+    bottom: 3px;
+}
+
+div input[type=text], div input[type=password] {
+    background: #52525f;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    font-family: Consolas, sans-serif;
+    outline: none;
+    padding: 5px;
+    color: #acacac;
+    font-weight: 900;
+}
+
+div input[type=text]::placeholder, div input[type=password]::placeholder {
+    color: #acacac;
+    font-weight: 900;
+}
+
+main {
+    position: relative;
+    top: 80px;
+    left: 0;
+    right: 0;
+}
+
+table td {
+    overflow: auto;
+    flow-into: auto;
+}
+
+table tr {
+    overflow: auto;
+    flow-into: auto;
+}
+
+
+
+

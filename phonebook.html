@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phonebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="../2-jQuery/jquery-3.2.1.min.js"></script>
+    <script src="phonebook.js"></script>
+    <link rel="stylesheet" href="styles/phonebook.css">
+    <link rel="stylesheet" href="../references/animate.css">
+
+</head>
+<body onload="startApp()">
+    <div id="phoneBookHeader">Phonebook</div>
+    
+    <section id="loadingBox">Loading...</section>
+    <section id="infoBox">Info</section>
+    <section id="errorBox">Error</section>
+
+    <header id="menu" class="animated zoomIn">
+        <input type="button" id="loginLink" value="Login">
+        <input type="button" id="registerLink" value="Register">
+
+        <section id="viewLogin">
+            <h1>Please Login</h1>
+            <form id="formLogin">
+                <div><input type="text" name="username" required placeholder="username"></div>
+                <div><input type="password" name="password" required placeholder="password"></div>
+                <div><input type="submit" id="buttonLoginUser" value="Enter"></div>
+            </form>
+        </section>
+
+        <section id="viewRegister">
+            <h1>Please Register</h1>
+            <form id="formRegister">
+                <div><input type="text" name="username" required placeholder="username"></div>
+                <div><input type="password" name="password" required placeholder="password"></div>
+                <div><input type="submit" id="buttonRegisterUser" value="Register"></div>
+            </form>
+        </section>
+    </header>
+    
+    <main>
+        <section id="viewHome">
+            <h1><span id="loggedInUser">Welcome to your phonebook,!</span></h1>
+            <!--<span id="loggedInUser">Welcome to your phonebook, Eray!</span>-->
+        </section>
+
+        <section id="userMenu">
+            <button id="phonebookLink">my phonebook</button>
+            <button id="addUserLink">add user</button>
+            <button id="logoutLink">logout</button>
+        </section>
+
+        <section id="viewCreatePhonebook">
+            <h1>New user</h1>
+            <form id="formCreatePhonebook">
+                <div><input type="text" name="user" placeholder="user"></div>
+                <div><input type="text" name="phone" placeholder="phone"></div>
+                <div><input type="button" id="AddPhonebook" value="Add"></div>
+            </form>
+        </section>
+
+        <section id="viewEditPhonebook">
+            <h1>Edit user</h1>
+            <form id="formEditPhonebook">
+                <div><input type="hidden" name="id" required></div>
+                <div><input type="text" name="user" placeholder="user"></div>
+                <div><input type="text" name="phone" placeholder="phone"></div>
+                <div><input type="button" id="buttonEditPhonebook" value="Edit"></div>
+            </form>
+        </section>
+
+        <section id="viewPhonebook">
+            <h1>Phonebook</h1>
+            <div id="phonebook">
+                <table>
+                    <tr>
+                        <th>User</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>Eray</td>
+                        <td>0896930338</td>
+                        <td>
+                            <a href="#">[Edit]</a>
+                            <a href="#">[Delete]</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
